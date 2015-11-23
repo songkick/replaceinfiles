@@ -1,6 +1,6 @@
 {
   "name": "replaceinfiles",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utility to replace a map of strings in many files",
   "main": "index.js",
   "bin": {
