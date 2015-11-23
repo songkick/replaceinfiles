@@ -7,11 +7,11 @@
     "replaceinfiles": "cli.js"
   },
   "scripts": {
-    "test": "tape test.js"
+    "test": "tap test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArnaudRinquin/replaceinfiles.git"
+    "url": "git+https://github.com/Songkick/replaceinfiles.git"
   },
   "keywords": [
     "cli",
@@ -21,9 +21,9 @@
   "author": "Arnaud Rinquin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ArnaudRinquin/replaceinfiles/issues"
+    "url": "https://github.com/Songkick/replaceinfiles/issues"
   },
-  "homepage": "https://github.com/ArnaudRinquin/replaceinfiles#readme",
+  "homepage": "https://github.com/Songkick/replaceinfiles#readme",
   "dependencies": {
     "commander": "^2.9.0",
     "digest-stream": "^0.2.2",
