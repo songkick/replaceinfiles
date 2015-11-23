@@ -40,7 +40,7 @@ Options:
     -s, --source <glob>            glob to files to be updated
     -d, --dest-pattern <path>      pattern to output files
     -o, --output-path <path>       path to output report file default: stdout
-    -S, --silent                   do not output anything
+    -S, --silent                   do not output report
     -r, --replace-map-path <path>  path to replace map json, default: stdin
     -e, --encoding <string>        used for both read and write, default "utf-8"
 ```
@@ -114,7 +114,7 @@ Here is an example:
 
 **-o, --output-path**: A path to write the report, default is `stdout`
 
-**-S, --silent**: Do not output anything, bypasses `-o`
+**-S, --silent**: Do not output report, bypasses `-o`
 
 **-e, --encoding**: Used for both read and write, default: `utf-8`
 

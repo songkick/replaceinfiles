@@ -16,10 +16,10 @@ var DEFAULTS = {
 };
 
 commander
-  .option('-s, --source <glob>', 'glob to files to be updated')
+  .option('-s, --source <glob>', 'glob matching files to be updated')
   .option('-d, --dest-pattern <path>', 'pattern to output files')
   .option('-o, --output-path <path>', 'path to output report file default: stdout')
-  .option('-S, --silent', 'do not output anything')
+  .option('-S, --silent', 'do not output report')
   .option('-r, --replace-map-path <path>', 'path to replace map json, default: stdin')
   .option('-e, --encoding <string>', 'used for both read and write, default "utf-8"')
 
