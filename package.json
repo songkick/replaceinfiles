@@ -33,7 +33,6 @@
   },
   "devDependencies": {
     "rimraf": "^2.4.4",
-    "tap": "^2.3.1",
-    "tape": "^4.2.2"
+    "tap": "^2.3.1"
   }
 }
