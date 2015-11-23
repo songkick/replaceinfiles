@@ -1,4 +1,4 @@
-# replace-in-files
+# replace-in-files [![Build Status](https://travis-ci.org/songkick/replaceinfiles.svg)](https://travis-ci.org/songkick/replaceinfiles)
 
 Utility to replace a map of strings in many files
 
@@ -48,17 +48,17 @@ Options:
 **Examples**
 
 * Streaming replace map from stdin
-  
+
   ```sh
   cat replace-map.json | replaceinplace -s src/*.css -d 'dist/%base%'
   ```
 * Getting replace map from file
-  
+
   ```sh
   replaceinplace -r replace-map.json -s src/*.css -d 'dist/%base%'
   ```
 * Write report to a file
-  
+
   ```sh
   replaceinplace -r replace-map.json -s src/*.css -d 'dist/%base%' > report.json
   # or
