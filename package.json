@@ -1,14 +1,17 @@
 {
-  "name": "infile-replace-cli",
+  "name": "replaceinfiles",
   "version": "0.0.0",
-  "description": "Utility to replace strings in files",
+  "description": "Utility to replace a map of strings in many files",
   "main": "index.js",
+  "bin": {
+    "replaceinfiles": "cli.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArnaudRinquin/infile-replace-cli.git"
+    "url": "git+https://github.com/ArnaudRinquin/replaceinfiles.git"
   },
   "keywords": [
     "cli",
@@ -18,11 +21,13 @@
   "author": "Arnaud Rinquin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ArnaudRinquin/infile-replace-cli/issues"
+    "url": "https://github.com/ArnaudRinquin/replaceinfiles/issues"
   },
-  "homepage": "https://github.com/ArnaudRinquin/infile-replace-cli#readme",
+  "homepage": "https://github.com/ArnaudRinquin/replaceinfiles#readme",
   "dependencies": {
+    "commander": "^2.9.0",
     "digest-stream": "^0.2.2",
+    "glob": "^6.0.1",
     "replacestream": "^4.0.0",
     "stream-cache": "0.0.2"
   }
