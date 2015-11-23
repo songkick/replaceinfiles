@@ -120,7 +120,7 @@ Here is an example:
 
 ## API
 
-You can also run `replaceinfile` from node.
+You can also run `replaceinfiles` from node.
 
 ```js
 var replaceinfiles = require('replaceinfiles');
