@@ -108,7 +108,7 @@ Here is an example:
 
 **-s, --source**: A [glob](https://github.com/isaacs/node-glob) matching the files you want to replace from
 
-**-d, --dest-pattern**: A pattern to define updated files destination. You can use all the [`path.parse()`](https://nodejs.org/api/path.html#path_path_parse_pathstring) result values (`root, dir, name, base, ext`), example: `-d './dist/&dir%/%name%.build%ext%'`
+**-d, --dest-pattern**: A pattern to define updated files destination. You can use all the [`path.parse()`](https://nodejs.org/api/path.html#path_path_parse_pathstring) result values (`root, dir, name, base, ext`), example: `-d './dist/%dir%/%name%.build%ext%'`
 
 **-r, --replace-map-path**: Path to a replace map JSON file (`{'stringToReplace': 'replaceWithThat', '..', '...'}`). `stdin` is used as default.
 
