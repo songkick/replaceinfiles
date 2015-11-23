@@ -48,14 +48,17 @@ Options:
 **Examples**
 
 * Streaming replace map from stdin
+  
   ```sh
   cat replace-map.json | replaceinplace -s src/*.css -d 'dist/%base%'
   ```
 * Getting replace map from file
+  
   ```sh
-    replaceinplace -r replace-map.json -s src/*.css -d 'dist/%base%'
+  replaceinplace -r replace-map.json -s src/*.css -d 'dist/%base%'
   ```
 * Write report to a file
+  
   ```sh
   replaceinplace -r replace-map.json -s src/*.css -d 'dist/%base%' > report.json
   # or
