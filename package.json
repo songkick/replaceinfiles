@@ -32,7 +32,6 @@
     "stream-cache": "0.0.2"
   },
   "devDependencies": {
-    "exec": "^0.2.1",
     "rimraf": "^2.4.4",
     "tap": "^2.3.1",
     "tape": "^4.2.2"
