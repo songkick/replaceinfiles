@@ -37,7 +37,7 @@ Usage: replaceinfiles [options]
 Options:
 
     -h, --help                     output usage information
-    -s, --source <glob>            template file path
+    -s, --source <glob>            glob to files to be updated
     -d, --dest-pattern <path>      pattern to output files
     -o, --output-path <path>       path to output report file default: stdout
     -S, --silent                   do not output anything

@@ -16,7 +16,7 @@ var DEFAULTS = {
 };
 
 commander
-  .option('-s, --source <glob>', 'template file path')
+  .option('-s, --source <glob>', 'glob to files to be updated')
   .option('-d, --dest-pattern <path>', 'pattern to output files')
   .option('-o, --output-path <path>', 'path to output report file default: stdout')
   .option('-S, --silent', 'do not output anything')
