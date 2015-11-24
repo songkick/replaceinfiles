@@ -50,19 +50,19 @@ Options:
 * Streaming replace map from stdin
 
   ```sh
-  cat replace-map.json | replaceinplace -s src/*.css -d 'dist/%base%'
+  cat replace-map.json | replaceinplace -s src/*.css -d 'dist/{base}'
   ```
 * Getting replace map from file
 
   ```sh
-  replaceinplace -r replace-map.json -s src/*.css -d 'dist/%base%'
+  replaceinplace -r replace-map.json -s src/*.css -d 'dist/{base}'
   ```
 * Write report to a file
 
   ```sh
-  replaceinplace -r replace-map.json -s src/*.css -d 'dist/%base%' > report.json
+  replaceinplace -r replace-map.json -s src/*.css -d 'dist/{base}' > report.json
   # or
-  replaceinplace -r replace-map.json -s src/*.css -d 'dist/%base%' -o report.json
+  replaceinplace -r replace-map.json -s src/*.css -d 'dist/{base}' -o report.json
   ```
 
 ## Report
@@ -75,7 +75,7 @@ Here is an example:
 {
   "options": {
     "source": "test/src/*.txt",
-    "destPattern": "test/dist/%base%",
+    "destPattern": "test/dist/{base}",
     "outputPath": null,
     "replaceMapPath": null,
     "replaceMap": {
@@ -108,7 +108,7 @@ Here is an example:
 
 **-s, --source**: A [glob](https://github.com/isaacs/node-glob) matching the files you want to replace from
 
-**-d, --dest-pattern**: A pattern to define updated files destination. You can use all the [`path.parse()`](https://nodejs.org/api/path.html#path_path_parse_pathstring) result values (`root, dir, name, base, ext`), example: `-d './dist/%dir%/%name%.build%ext%'`
+**-d, --dest-pattern**: A pattern to define updated files destination. You can use all the [`path.parse()`](https://nodejs.org/api/path.html#path_path_parse_pathstring) result values (`root, dir, name, base, ext`), example: `-d './dist/{dir}/{name}.build{ext}'`
 
 **-r, --replace-map-path**: Path to a replace map JSON file (`{'stringToReplace': 'replaceWithThat', '..', '...'}`). `stdin` is used as default.
 
@@ -127,7 +127,7 @@ var replaceinfiles = require('replaceinfiles');
 
 var options = {
   source: './test/*.txt',
-  destPattern: './test/dist/%base%',
+  destPattern: './test/dist/{base}',
   replaceMap: {
     foo: 'bar'
   }

@@ -29,7 +29,7 @@ tap.test('CLI', function(test){
   child_process.execFile('./cli.js', [
     "-s", "test/src/*.txt",
     "-r", "test/replace-map.json",
-    "-d", "test/dist/%base%-test-output",
+    "-d", "test/dist/{base}-test-output",
     "-o", "test/dist/report.json"
   ], function(error, stdout, stderr){
     test.equal(error, null, 'returned without an error code');
@@ -50,7 +50,7 @@ tap.test('CLI', function(test){
         test.plan(5);
         test.equal(options.source, 'test/src/*.txt', 'contains source');
         test.equal(options.replaceMapPath, 'test/replace-map.json', 'contains replace map path');
-        test.equal(options.destPattern, 'test/dist/%base%-test-output', 'contains dest pattern');
+        test.equal(options.destPattern, 'test/dist/{base}-test-output', 'contains dest pattern');
         test.equal(options.outputPath, 'test/dist/report.json', 'contains output dest path');
         test.same(options.replaceMap, {
             "hello": "goodbye",
