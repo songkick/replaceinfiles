@@ -93,12 +93,6 @@ hashmark -c dist -r -l 6 'assets/**/*.*' '{dir}/{name}-{hash}{ext}' | replaceinf
 }
 ```
 
-**Temporary caveat:** The `-c` working directory option isn't available yet on publish `hashmark` version but is critical to the two tools cooperation. Until the [pull requet]() is merged, you can simply use the upgrade version:
-
-```
-npm i -D arnaudrinquin/hashmark#feature/cwd-option
-```
-
 **Bonus:** If you also want to hashmark you `.css` and `.js` files, you are going to need to replace the references in `index.html`. You would need to follow these steps:
 
 1. hashmark assets (images, fonts)

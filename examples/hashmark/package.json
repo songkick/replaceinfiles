@@ -15,8 +15,8 @@
   "author": "Arnaud Rinquin",
   "license": "MIT",
   "devDependencies": {
-    "hashmark": "arnaudrinquin/hashmark#feature/cwd-option",
+    "hashmark": "3.1.0",
     "injectassets": "0.0.1",
-    "replaceinfiles": "^1.1.1"
+    "replaceinfiles": "1.1.1"
   }
 }
