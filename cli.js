@@ -20,7 +20,6 @@ var DEFAULTS = {
 
 commander
   .version(pkg.version)
-  .option('-v, --version', 'print current version')
   .option('-s, --source <glob>', 'glob matching files to be updated')
   .option('-d, --dest-pattern <path>', 'pattern to output files')
   .option('-o, --output-path <path>', 'path to output report file default: stdout')

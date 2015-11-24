@@ -37,7 +37,8 @@ Usage: replaceinfiles [options]
 Options:
 
     -h, --help                     output usage information
-    -s, --source <glob>            glob to files to be updated
+    -V, --version                  output the version number
+    -s, --source <glob>            glob matching files to be updated
     -d, --dest-pattern <path>      pattern to output files
     -o, --output-path <path>       path to output report file default: stdout
     -S, --silent                   do not output report
