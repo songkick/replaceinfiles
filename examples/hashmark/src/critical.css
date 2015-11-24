@@ -1,0 +1,9 @@
+a{
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+body{
+  background:url(/assets/images/background.png);
+}

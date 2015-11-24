@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Post Angular</title>
+    {{#css}}
+    <link href="{{.}}" rel="stylesheet" type="text/css">
+    {{/css}}
+    {{#js}}
+    <script src="{{.}}"></script>
+    {{/js}}
+</head>
+<body>
+    <h1>How would you describe your experience using Angular?</h1>
+    <video autoplay loop>
+        <source src="https://pbs.twimg.com/tweet_video/CTdKMDTUEAAXNi5.mp4" type="video/mp4">
+    </video>
+    <div id="app-root" ng-strict-di ng-controller="moduleAController as users">
+        <div module-a-list user-list="users.userList"></div>
+    </div>
+</body>
+</html>

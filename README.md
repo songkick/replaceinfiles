@@ -4,7 +4,7 @@ Utility to replace a map of strings in many files
 
 Use cases:
 
-* pipe from [`hashmark`](https://github.com/keithamus/hashmark) to replace references to hashmarked files
+* pipe from [`hashmark`](https://github.com/keithamus/hashmark) to replace references to hashmarked files - see [example](./examples/hashmark)
 * replace dev environment paths to production
 * inject values in a config file
 * _???_

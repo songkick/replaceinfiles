@@ -1,0 +1,22 @@
+{
+  "name": "example-hashmark",
+  "version": "0.0.0",
+  "description": "hashmark + replaceinfiles integration example",
+  "private": true,
+  "scripts": {
+    "prebuild": "rm -rf dist/*.* dist/assets",
+    "build": "for step in 'assets' 'js' 'css' 'mark' 'html'; do npm run build:$step; done",
+    "build:assets": "cp -r src/assets dist",
+    "build:js": "cp src/*.js dist",
+    "build:css": "cp src/*.css dist",
+    "build:mark": "hashmark -c dist -r -l 6 'assets/**/*.*' '{dir}/{name}-{hash}{ext}' | replaceinfiles -S -s 'dist/*.css' -d '{dir}/{base}' && hashmark -s -c dist -r -l 6 '*.{css,js}' '{dir}/{name}-{hash}{ext}'",
+    "build:html": "injectassets -s src/index.html -o dist/index.html -d dist"
+  },
+  "author": "Arnaud Rinquin",
+  "license": "MIT",
+  "devDependencies": {
+    "hashmark": "arnaudrinquin/hashmark#feature/cwd-option",
+    "injectassets": "0.0.1",
+    "replaceinfiles": "^1.1.1"
+  }
+}
