@@ -51,19 +51,19 @@ Options:
 * Streaming replace map from stdin
 
   ```sh
-  cat replace-map.json | replaceinplace -s src/*.css -d 'dist/{base}'
+  cat replace-map.json | replaceinfiles -s src/*.css -d 'dist/{base}'
   ```
 * Getting replace map from file
 
   ```sh
-  replaceinplace -r replace-map.json -s src/*.css -d 'dist/{base}'
+  replaceinfiles -r replace-map.json -s src/*.css -d 'dist/{base}'
   ```
 * Write report to a file
 
   ```sh
-  replaceinplace -r replace-map.json -s src/*.css -d 'dist/{base}' > report.json
+  replaceinfiles -r replace-map.json -s src/*.css -d 'dist/{base}' > report.json
   # or
-  replaceinplace -r replace-map.json -s src/*.css -d 'dist/{base}' -o report.json
+  replaceinfiles -r replace-map.json -s src/*.css -d 'dist/{base}' -o report.json
   ```
 
 ## Report
