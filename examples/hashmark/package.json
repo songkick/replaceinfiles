@@ -10,13 +10,13 @@
     "build:js": "cp src/*.js dist",
     "build:css": "cp src/*.css dist",
     "build:mark": "hashmark -c dist -r -l 6 'assets/**/*.*' '{dir}/{name}-{hash}{ext}' | replaceinfiles -S -s 'dist/*.css' -d '{dir}/{base}' && hashmark -s -c dist -r -l 6 '*.{css,js}' '{dir}/{name}-{hash}{ext}'",
-    "build:html": "injectassets -s src/index.html -o dist/index.html -d dist"
+    "build:html": "injectassets -s src/index.html -o dist/index.html -d dist -g '*.{css,js}'"
   },
   "author": "Arnaud Rinquin",
   "license": "MIT",
   "devDependencies": {
     "hashmark": "3.1.0",
-    "injectassets": "0.0.1",
+    "injectassets": "1.0.2",
     "replaceinfiles": "1.1.1"
   }
 }

@@ -110,10 +110,10 @@ Simply write a source html with including injection instructions (in `src/index.
     <meta charset="UTF-8">
     <title>I love CLI tools</title>
     {{#css}}
-    <link href="{{.}}" rel="stylesheet" type="text/css">
+    <link href="{{{.}}}" rel="stylesheet" type="text/css">
     {{/css}}
     {{#js}}
-    <script src="{{.}}"></script>
+    <script src="{{{.}}}"></script>
     {{/js}}
 </head>
 <body>
@@ -124,7 +124,7 @@ Simply write a source html with including injection instructions (in `src/index.
 
 And run:
 ```bash
-injectassets -s src/index.html -o dist/index.html -d dist
+injectassets -s src/index.html -o dist/index.html -d dist -g '*.{css,js}'
 ```
 
 To get a nice `dist/index.html` that includes hashmarked `css` and `js` files.
