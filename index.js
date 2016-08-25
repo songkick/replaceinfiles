@@ -29,7 +29,9 @@ function chainReplacers(replaceMap) {
   }
 
   return function(inputStream) {
-    return Object.keys(replaceMap).reduce(pipeReplacer, inputStream);
+    return Object.keys(replaceMap)
+      .sort(function (a, b) { return b.length - a.length; })
+      .reduce(pipeReplacer, inputStream);
   }
 }
 
