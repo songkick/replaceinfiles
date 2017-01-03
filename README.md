@@ -132,6 +132,8 @@ var options = {
   replaceMap: {
     foo: 'bar'
   }
+  // or, specify a path to your replaceMap json file
+  // replaceMapPath: './map.json'
 };
 
 replaceinfiles(options)
@@ -142,3 +144,4 @@ replaceinfiles(options)
     // ...
   });
 ```
+If you do not specify `replaceMap` or `replaceMapPath` then `stdin` will be used.
