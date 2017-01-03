@@ -128,7 +128,7 @@ function runPaths(sourcePaths, options) {
 module.exports = function run(options) {
   return Promise.all([
     listPaths(options.source),
-    getReplaceMap(options.encoding, options.replaceMapPath)
+    getReplaceMap(options.encoding, options.replaceMapPath, options.replaceMap)
   ]).then(function(results){
     var sourcePaths = results[0];
     var replaceMap = results[1];
