@@ -7,7 +7,11 @@ Use cases:
 * pipe from [`hashmark`](https://github.com/keithamus/hashmark) to replace references to hashmarked files - see [example](./examples/hashmark)
 * replace dev environment paths to production
 * inject values in a config file
-* _???_
+
+
+## Not actively worked on
+
+We're happy to accept PRs and suggestions, but be aware that this project is no longer used internally and therefore not actively maintained + improved by Songkick.
 
 
 ## Usage
